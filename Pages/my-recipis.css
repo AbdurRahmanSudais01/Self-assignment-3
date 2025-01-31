@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --shadow-color:rgba(0, 0, 0, .5);
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: "Ubuntu", serif;
+}
+/* nav */
+nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 2px 10px var(--shadow-color);
+}
+.brand{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+.brandImg{
+    height: 50px;
+    width: 50px;
+
+}
+.pagesUl{
+    display: flex;
+    list-style: none;
+
+}
+.header__links{
+    padding : 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.header__line{
+    border: 1px solid grey;
+}
+.btns{
+    display: flex;
+    padding: 2%;
+    margin-left: auto;
+    
+}
+
+.btn{
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    margin-left: 5px;
+    border: 1px solid black;
+}
+.btn:hover{
+    color: whitesmoke;
+    background-color: black;
+}
+/* Main Section */
+.sec2{
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+.sec2 h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 500px;
+    width: 30%;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 10px var(--shadow-color);
+    margin-top: 50px;
+    text-align:center;
+    transition: all .5s ease-in-out;
+}
+.cards h3{
+    font-size: 1.5rem;
+    margin-top: 5%;
+    
+}
+.card__img{
+    width: 100%;
+    
+    height: 250px;
+}
+.cards a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.cards p{
+    margin-top: 5%;
+}
+.card__btn{
+    margin-top: 50%;
+    color: whitesmoke;
+    background-color: black;
+    transition: all .5s ease-out;
+    
+}
+.card__btn:hover{
+    color: black;
+    background-color: transparent;
+}
+/* Footer */
+footer{
+    box-shadow: 0px -2px 10px var(--shadow-color);
+    
+    padding: 2%;
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.contact img{
+    width: 50px;
+}
+.contact ul{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.contact a{
+    color: black;
+    text-decoration: none;
+}
+.copyright{
+    text-align: center;
+    padding-top: 5px;
+    border-top: 1px solid black;
+    
+}
+
+/* Media Qyerries */
+
+@media (min-width: 1440px) {
+   
+}
+@media (max-width: 940px) {
+    .cards{
+        height: 400px;
+    }.cards p{
+        font-size: .8rem;
+    }
+    .cards h3{
+        font-size: 1rem;
+    }
+    .card__btn{
+        margin-top: 10% ;
+    }
+    .card__img{
+        height: 230px;
+    }
+}
+@media (max-width: 768px) {
+    .brand{
+        margin: 2px;
+    }
+    .brandImg{
+        height: 30px;
+        width: 30px;
+    }
+    .header__links{
+        font-size: 1rem;
+        padding: 15px;
+    }
+    .btn{
+        font-size: 1rem;
+        padding: 2px;
+        width: 70px;
+    }
+    .contact img{
+        width: 30px;
+    }
+    .card__btn{
+        font-size: .8rem;
+        width: 100px;
+        padding: 2%;
+    }
+    footer{
+        font-size: .8rem;
+    }
+}
+@media (max-width: 560px) {
+    .cards{
+        width: 300px;
+    }
+    .cards p{
+        font-size: .8rem;
+    }
+    .cards h4{
+        font-size: 1rem;
+       }
+       .card__btn{
+        margin-top: 20px;
+        padding: 2px;
+        width: 100px;
+       }
+}
+@media (max-width: 450px) {
+    .btn{
+        font-size: .8rem;
+        padding: 1px;
+        width: 60px;
+    }
+    .header__links{
+        font-size: .8rem;
+        padding: 10px;
+}
+    .cards{
+        width: 250px;
+    }
+    .cards p{
+        font-size: .8rem;
+    }
+    .cards h4{
+        font-size: 1rem;
+       }
+       .card__btn{
+        margin-top: 20px;
+        padding: 2px;
+        width: 100px;
+       }
+       .sec2 h1{
+        font-size: 2rem;
+       }
+       main{
+        padding: 5px;
+       }
+}
+@media (min-width: 320px) {
+   
+}

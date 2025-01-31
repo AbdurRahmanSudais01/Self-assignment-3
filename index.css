@@ -1,0 +1,237 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --shadow-color:rgba(0, 0, 0, .5);
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: "Ubuntu", serif;
+    background-color: whitesmoke;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 2px 10px var(--shadow-color);
+}
+.brand{
+    margin: 5px;
+}
+.brandImg{
+    height: 50px;
+    width: 50px;
+
+}
+.pagesUl{
+    display: flex;
+    list-style: none;
+
+}
+.header__links{
+    padding : 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.header__line{
+    border: 1px solid grey;
+}
+.btns{
+    display: flex;
+    padding: 2%;
+    margin-left: auto;
+    
+}
+
+.btn{
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 5px;
+    transition: all .5s ease-in;
+}
+.btn:hover{
+    color: whitesmoke;
+    background-color: black;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.main__text{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 4%;
+}
+.main__text h1{
+    font-size: 2.3rem;
+}
+.main__text h4{
+    margin-top: 5%;
+}
+.main__text p{
+    margin-top: 10%;
+}
+.main__image{
+    
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    
+}
+.main__image img{
+    height: 300px;
+    width: 500px;
+    mix-blend-mode: multiply;
+}
+.btn2{
+    width: 100%;
+    color: whitesmoke;
+    background-color: black;
+    margin: 0px;
+    margin-top: 10%;
+}
+.btn2:hover{
+    color: black;
+    background-color: transparent;
+}
+main a{
+    text-decoration: none;
+    color: black;
+}
+/* Footer */
+footer{
+    box-shadow: 0px -2px 10px var(--shadow-color);
+    
+    padding: 2%;
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.contact img{
+    width: 50px;
+}
+.contact ul{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.contact a{
+    color: black;
+    text-decoration: none;
+}
+.copyright{
+    text-align: center;
+    padding-top: 5px;
+    border-top: 1px solid black;
+    
+}
+/* Media Querries */
+
+@media (max-width: 768px) {
+    .brand{
+        margin: 2px;
+    }
+    .brandImg{
+        height: 30px;
+        width: 30px;
+    }
+    .main__text p{
+        font-size: .8rem;
+    }
+    .header__links{
+        font-size: 1rem;
+        padding: 15px;
+    }
+    .btn{
+        font-size: 1rem;
+        padding: 2px;
+        width: 70px;
+    }
+    .btn2{
+        width: 100px;
+        padding: 2px;
+    }
+    .contact img{
+        width: 30px;
+    }
+    .main__image img{
+        height: 250px;
+    width: 300px;
+    }
+    
+    footer{
+        font-size: .8rem;
+    }
+}
+@media (max-width:525px){
+    .main__image img{
+        height: 200px;
+    width: 250px;
+
+    }
+}
+@media (max-width: 450px) {
+    
+    .btn{
+        font-size: .8rem;
+        padding: 1px;
+        width: 60px;
+    }
+    .btn2{
+        width: 100px;
+        padding: 2px;}
+    .header__links{
+        font-size: .8rem;
+        padding: 10px;
+}
+main{
+    width: 100%;
+    margin-right: 0px;
+    justify-content: flex-start;
+    height: 500px;
+    margin: 35px auto;
+    background-image: url(Pages/Images/food2.png);
+    background-position: right;
+    background-size:300px;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    
+
+    
+}
+.main__text{
+    width: 50%;
+}
+.main__text h1{
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.main__text h4{
+    font-size: .8rem;
+}
+.main__text p{
+    font-size: .8rem;
+}
+.main__image{
+    display: none;
+}
+}
+
+
