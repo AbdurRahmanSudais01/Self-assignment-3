@@ -88,13 +88,13 @@ main{
 }
 .main__image{
     
-    padding: 4%;
+    padding: 2%;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     
 }
 .main__image img{
-    height: 300px;
+    height: 500px;
     width: 500px;
     mix-blend-mode: multiply;
 }
@@ -207,7 +207,7 @@ main{
     justify-content: flex-start;
     height: 500px;
     margin: 35px auto;
-    background-image: url(Pages/Images/food2.png);
+    background-image: url(Pages/Images/istockphoto-517109442-612x612.jpg);
     background-position: right;
     background-size:300px;
     background-blend-mode: multiply;
